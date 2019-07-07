@@ -10,7 +10,7 @@ $password = $_POST['password'];
 require_once('koneksi.php');
 
 //check ke database apakah user telah digunakan
-$checkUser = "SELECT * FROM users WHERE email='$email'";
+$checkUser = "SELECT * FROM users WHERE email='$email' AND phonenumber='$phonenumber'";
 $r = mysqli_query($con,$checkUser) ;
 $result = array();
 $row = mysqli_fetch_array($r);
