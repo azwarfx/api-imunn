@@ -13,7 +13,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
             "status"=>"succes",
             "fullname"=>$row['fullname'],
             "email"=>$row['email'],
-            "phonenumber"=>$row['phonenumber']
+            "phonenumber"=>$row['phonenumber'],
+            "password"=>$row['password']
         ));
         echo json_encode(array('result'=>$result));
 
